@@ -1,6 +1,8 @@
 import meter1 from '../assets/img/meter1.svg';
 import meter2 from '../assets/img/meter2.svg';
 import meter3 from '../assets/img/meter3.svg';
+import meter4 from '../assets/img/70.png';
+import meter5 from '../assets/img/50.png';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import arrow1 from '../assets/img/arrow1.svg';
@@ -36,23 +38,55 @@ export const Skills = () =>
                     <div className="col-12">
                         <div className="skill-bx wow zoomIn">
                             <h2>Skills</h2>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
+                            <p>Throughout my academic journey, I have diligently cultivated and honed a diverse array of skills.<br></br>I have listed them below.</p>
                             <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                                 <div className="item">
                                     <img src={meter1} alt="Image" />
-                                    <h5>Web Development</h5>
-                                </div>
-                                <div className="item">
-                                    <img src={meter2} alt="Image" />
-                                    <h5>Brand Identity</h5>
-                                </div>
-                                <div className="item">
-                                    <img src={meter3} alt="Image" />
-                                    <h5>Logo Design</h5>
+                                    <h5>Asp.Net</h5>
                                 </div>
                                 <div className="item">
                                     <img src={meter1} alt="Image" />
-                                    <h5>Web Development</h5>
+                                    <h5>Object Oriented Programming</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={meter2} alt="Image" />
+                                    <h5>Java</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={meter3} alt="Image" />
+                                    <h5>React.js</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={meter1} alt="Image" />
+                                    <h5>SQL</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={meter5} alt="Image" />
+                                    <h5>Python</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={meter4} alt="Image" />
+                                    <h5>React.js</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={meter1} alt="Image" />
+                                    <h5>HTML & CSS</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={meter5} alt="Image" />
+                                    <h5>NoSQL</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={meter3} alt="Image" />
+                                    <h5>Software Engineering</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={meter1} alt="Image" />
+                                    <h5>Git and Github</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={meter5} alt="Image" />
+                                    <h5>Microservices</h5>
                                 </div>
                             </Carousel>
                         </div>
