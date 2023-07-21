@@ -1,17 +1,22 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
 import networked from '../assets/img/networked.png';
+import gjejpune from '../assets/img/GjepPune.png';
+import furniture from '../assets/img/Furniture.png';
+import nuget from '../assets/img/nuget.png';
+import draw from '../assets/img/draw.png';
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import networkedMp4 from "../assets/videos/networked.mp4";
+import gjejPuneMp4 from "../assets/videos/GjejPune.mp4"
+import furnitureMp4 from "../assets/videos/furniture.mp4"
+import drawmp4 from '../assets/videos/draw.mp4';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
 export const Projects = () =>
 {
 
+    var link = 'https://www.nuget.org/packages/Networked.Utilities.FileManager';
     const projects = [
         {
             title: "Social Network: NetWorked",
@@ -20,30 +25,34 @@ export const Projects = () =>
             demo: networkedMp4,
         },
         {
-            title: "Business Startup",
-            description: "Design & Development",
-            imgUrl: projImg2,
+            title: "Furniture ordering website",
+            description: "Technologies: PHP, Sql",
+            imgUrl: furniture,
+            demo: furnitureMp4,
         },
         {
-            title: "Business Startup",
-            description: "Design & Development",
-            imgUrl: projImg3,
+            title: "File Package",
+            description: "This is a nuget package made with .net to manage files. It contains functions to download, upload, delete.",
+            imgUrl: nuget,
+            demo: link,
         },
         {
-            title: "Business Startup",
-            description: "Design & Development",
-            imgUrl: projImg1,
+            title: "Job Portal: GjejPune",
+            description: "Technologies: .net 6, react.js, MSSQL",
+            imgUrl: gjejpune,
+            demo: gjejPuneMp4,
         },
         {
-            title: "Business Startup",
-            description: "Design & Development",
-            imgUrl: projImg2,
+            title: "Drawing app",
+            description: "Java desktop application",
+            imgUrl: draw,
+            demo: drawmp4,
         },
-        {
-            title: "Business Startup",
-            description: "Design & Development",
-            imgUrl: projImg3,
-        },
+        // {
+        //     title: "Business Startup",
+        //     description: "Design & Development",
+        //     imgUrl: projImg3,
+        // },
     ];
 
     return (
