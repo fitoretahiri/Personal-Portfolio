@@ -48,11 +48,6 @@ export const Projects = () =>
             imgUrl: draw,
             demo: drawmp4,
         },
-        // {
-        //     title: "Business Startup",
-        //     description: "Design & Development",
-        //     imgUrl: projImg3,
-        // },
     ];
 
     return (
@@ -64,7 +59,7 @@ export const Projects = () =>
                             {({ isVisible }) =>
                                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                                     <h2>Projects</h2>
-                                    <p>During my 3 year studies, I have constantly worked on individual as well as group projects. Here is my best work.</p>
+                                    <p>During my 3 year studies, I have constantly worked on individual as well as group projects. Here is some of my best work.</p>
                                     <Tab.Container id="projects-tabs" defaultActiveKey="first">
                                         <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                                             <Nav.Item>
@@ -93,7 +88,7 @@ export const Projects = () =>
                                                     }
                                                 </Row>
                                             </Tab.Pane>
-                                            <Tab.Pane eventKey="section">
+                                            <Tab.Pane eventKey="second">
                                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
                                             </Tab.Pane>
                                             <Tab.Pane eventKey="third">

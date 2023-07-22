@@ -1,19 +1,20 @@
-import meter1 from '../assets/img/meter1.svg';
-import meter2 from '../assets/img/meter2.svg';
-import meter3 from '../assets/img/meter3.svg';
-import meter4 from '../assets/img/70.png';
-import meter5 from '../assets/img/50.png';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import arrow1 from '../assets/img/arrow1.svg';
-import arrow2 from '../assets/img/arrow2.svg';
 import colorSharp from '../assets/img/color-sharp.png'
+import dotnet from '../assets/img/dotnet.png';
+import sql from '../assets/img/sql.png';
+import git from '../assets/img/git.png';
+import java from '../assets/img/java.png';
+import reactlogo from '../assets/img/reactlogo.png';
+import python from '../assets/img/python.png'
+import html from '../assets/img/html.png'
+import css from '../assets/img/css.png'
+import mongo from '../assets/img/mongo.png'
 
 export const Skills = () =>
 {
     const responsive = {
         superLargeDesktop: {
-            // the naming can be any, depends on you.
             breakpoint: { max: 4000, min: 3000 },
             items: 5
         },
@@ -38,62 +39,41 @@ export const Skills = () =>
                     <div className="col-12">
                         <div className="skill-bx wow zoomIn">
                             <h2>Skills</h2>
-                            <p>Throughout my academic journey, I have diligently cultivated and honed a diverse array of skills.<br></br>I have listed them below.</p>
+                            <p>Throughout my academic journey, I have diligently cultivated and honed a diverse array of skills.<br></br>I have 1+ years of experience in .Net and React.js. Additionally, I have worked on various technologies as listed below.</p>
                             <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                                 <div className="item">
-                                    <img src={meter1} alt="Image" />
-                                    <h5>Asp.Net</h5>
+                                    <img src={dotnet} alt="dotnet" />
                                 </div>
                                 <div className="item">
-                                    <img src={meter1} alt="Image" />
-                                    <h5>Object Oriented Programming</h5>
+                                    <img src={reactlogo} alt="react" />
                                 </div>
                                 <div className="item">
-                                    <img src={meter2} alt="Image" />
-                                    <h5>Java</h5>
+                                    <img src={git} alt="git" />
                                 </div>
                                 <div className="item">
-                                    <img src={meter3} alt="Image" />
-                                    <h5>React.js</h5>
+                                    <img src={java} alt="java" />
                                 </div>
                                 <div className="item">
-                                    <img src={meter1} alt="Image" />
-                                    <h5>SQL</h5>
+                                    <img src={sql} alt="sql" />
                                 </div>
                                 <div className="item">
-                                    <img src={meter5} alt="Image" />
-                                    <h5>Python</h5>
+                                    <img src={python} alt="python" />
                                 </div>
                                 <div className="item">
-                                    <img src={meter4} alt="Image" />
-                                    <h5>React.js</h5>
+                                    <img src={html} alt="html" />
                                 </div>
                                 <div className="item">
-                                    <img src={meter1} alt="Image" />
-                                    <h5>HTML & CSS</h5>
+                                    <img src={css} alt="css" />
                                 </div>
                                 <div className="item">
-                                    <img src={meter5} alt="Image" />
-                                    <h5>NoSQL</h5>
-                                </div>
-                                <div className="item">
-                                    <img src={meter3} alt="Image" />
-                                    <h5>Software Engineering</h5>
-                                </div>
-                                <div className="item">
-                                    <img src={meter1} alt="Image" />
-                                    <h5>Git and Github</h5>
-                                </div>
-                                <div className="item">
-                                    <img src={meter5} alt="Image" />
-                                    <h5>Microservices</h5>
+                                    <img src={mongo} alt="mongo" />
                                 </div>
                             </Carousel>
                         </div>
                     </div>
                 </div>
             </div>
-            <img className="background-image-left" src={colorSharp} alt="Image" />
+            <img className="background-image-left" src={colorSharp} alt="colorsharp" />
         </section>
     )
 }
