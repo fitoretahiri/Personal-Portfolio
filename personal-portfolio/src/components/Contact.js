@@ -52,16 +52,16 @@ export const Contact = () =>
                                                 <input type="text" name="user_name" placeholder="First Name" required />
                                             </Col>
                                             <Col size={12} sm={6} className="px-1">
-                                                <input type="text" name="user_surname"  placeholder="Last Name" required/>
+                                                <input type="text" name="user_surname" placeholder="Last Name" required />
                                             </Col>
                                             <Col size={12} sm={6} className="px-1">
-                                                <input type="email" name="user_email" placeholder="Email Address" required/>
+                                                <input type="email" name="user_email" placeholder="Email Address" required />
                                             </Col>
                                             <Col size={12} sm={6} className="px-1">
                                                 <input type="tel" name="phone" placeholder="Phone No." />
                                             </Col>
                                             <Col size={12} className="px-1">
-                                                <textarea rows="6" name="message" placeholder="Message" ></textarea>
+                                                <textarea rows="6" name="message" placeholder="Message" required></textarea>
                                                 <button type="submit"><span>{buttonText}</span></button>
                                             </Col>
                                             {
