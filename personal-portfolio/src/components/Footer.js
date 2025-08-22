@@ -21,7 +21,7 @@ export const Footer = () =>
                             <a href="https://www.facebook.com/fitoretahirii/"><img src={navIcon2} alt="Icon" /></a>
                             <a href="https://github.com/fitoretahiri"><img src={navIcon3} alt="Icon" /></a>
                         </div>
-                        <p>Copyright 2023. All Rights Reserved</p>
+                        <p>© Copyright {new Date().getFullYear()}. All Rights Reserved to Fitore Tahiri!</p>
                     </Col>
                 </Row>
             </Container>

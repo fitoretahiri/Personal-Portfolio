@@ -39,7 +39,7 @@ export const Skills = () =>
                     <div className="col-12">
                         <div className="skill-bx wow zoomIn">
                             <h2>Skills</h2>
-                            <p>Throughout my academic journey, I have diligently cultivated and honed a diverse array of skills.<br></br>I have 1+ years of experience in .Net and React.js. Additionally, I have worked on various technologies as listed below.</p>
+                            <p>Throughout my professional work experience and academic journey, I have diligently cultivated and honed a diverse array of skills.<br></br>I have 2+ years of experience in Python and SQL. Additionally, I have worked on various technologies as listed below.</p>
                             <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                                 <div className="item">
                                     <img src={dotnet} alt="dotnet" />

@@ -4,7 +4,8 @@ import headerImg2 from '../assets/img/header3.png'
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
-// import CV from '../assets/img/CV-FitoreTahiri.pdf';
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
 export const Banner = () =>
 {
@@ -55,6 +56,21 @@ export const Banner = () =>
             setIndex(prevIndex => prevIndex + 1);
         }
     }
+
+    const responsive = {
+        desktop: {
+            breakpoint: { max: 3000, min: 1024 },
+            items: 1,
+        },
+        tablet: {
+            breakpoint: { max: 1024, min: 464 },
+            items: 1,
+        },
+        mobile: {
+            breakpoint: { max: 464, min: 0 },
+            items: 1,
+        },
+        };
     // const handleDownload = () =>
     // {
     //     const anchor = document.createElement('a');
@@ -72,15 +88,57 @@ export const Banner = () =>
                             {({ isVisible }) =>
                                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                                     <span className="tagline">Welcome to my Portfolio</span>
-                                    <h1>{`Hi! I'm Fitore Tahiri`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Software Engineer", "Web Developer", "Data Engineer" ]'><span className="wrap">{text}</span></span></h1>
-                                    <p>
-                                        I am a passionate Computer Science enthusiast with a strong focus on Software Engineering. My dedication to continuous improvement drives me to actively engage in various learning opportunities such as attending conferences, participating in training sessions, and collaborating on group projects. I possess valuable experience in Object-Oriented Programming using .NET and Java, and my proficiency extends to frontend technologies including HTML, JavaScript, CSS, and React.js. Additionally, I have a deep appreciation for data and a strong affinity for Python.
-                                        <br />I can't wait to join like-minded professionals in creating cutting-edge solutions and driving progress in the ever-evolving tech landscape.
-                                    </p>
+                                    {/* <h1>{`Hi! I'm Fitore Tahiri`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Software Engineer", "Data Scientist", "Data Engineer" ]'><span className="wrap">{text}</span></span></h1> */}
+                                    <h1>{`Hi there! I'm Fitore Tahiri!`}</h1>
+                                    <h2>{`Software and Data Engineer`}</h2>
+                                    <Carousel
+                                        responsive={responsive}
+                                        infinite
+                                        autoPlay
+                                        autoPlaySpeed={6000}
+                                        showDots
+                                        arrows={false}
+                                        >
+                                        <div>
+                                            <p>
+                                            I am a passionate Software and Data Engineer with more than 2 years of
+                                            experience in the field. Currently working in the banking sector as a
+                                            Software Developer in the Data and Reporting team, I have gained
+                                            valuable experience and skills in the field. My day to day work
+                                            involves developing and maintaining software applications, as well as
+                                            automating ETL processes using Python, Django, SQL, Javascript,
+                                            React.js, Azure Synapse, and more, for financial data reporting. In
+                                            addition to my technical skills, I am a strong communicator and
+                                            collaborator, able to work effectively in team environments and engage
+                                            with stakeholders to understand their needs and deliver solutions that
+                                            meet their requirements.
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <p>
+                                            Furthermore, I have a solid academic background, having completed my
+                                            Bachelor's degree in Computer Science and Engineering with focus on
+                                            Software and Systems Engineering. Right now, I am pursuing a Master's
+                                            degree in Data Science and Artificial Intelligence to further enhance
+                                            my knowledge and skills in the field. I posses a strong foundation in
+                                            computer science principles, algorithms, and data structures, as well
+                                            as experience with various programming languages and tools.
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <p>
+                                            Overall, I am a dedicated and driven professional with a passion for
+                                            technology and a commitment to continuous learning and growth. My goal 
+                                            is to continue advancing my career as a Data Engineer, tackling projects
+                                             that push both my technical and analytical boundaries.
+                                            </p>
+                                        </div>
+                                        </Carousel>
                                     {/* <button onClick={handleDownload}>Download CV <ArrowRightCircle size={25} /></button> */}                                   
                                 </div>}
                         </TrackVisibility>
                     </Col>
+                    
                     <Col xs={12} md={6} xl={5}>
                         <TrackVisibility>
                             {({ isVisible }) =>
