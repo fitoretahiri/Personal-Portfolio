@@ -77,7 +77,7 @@ export const Banner = () =>
                                         I am a passionate Computer Science enthusiast with a strong focus on Software Engineering. My dedication to continuous improvement drives me to actively engage in various learning opportunities such as attending conferences, participating in training sessions, and collaborating on group projects. I possess valuable experience in Object-Oriented Programming using .NET and Java, and my proficiency extends to frontend technologies including HTML, JavaScript, CSS, and React.js. Additionally, I have a deep appreciation for data and a strong affinity for Python.
                                         <br />I can't wait to join like-minded professionals in creating cutting-edge solutions and driving progress in the ever-evolving tech landscape.
                                     </p>
-                                    // <button onClick={handleDownload}>Download CV <ArrowRightCircle size={25} /></button>
+                                    {/* <button onClick={handleDownload}>Download CV <ArrowRightCircle size={25} /></button> */}                                   
                                 </div>}
                         </TrackVisibility>
                     </Col>
